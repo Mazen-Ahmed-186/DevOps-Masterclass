@@ -1,6 +1,5 @@
 import request from "supertest";
 import app from "#src/app.js";
-import {it} from "zod/locales";
 
 describe("API Endpoints", () => {
     describe("GET /health", () => {
