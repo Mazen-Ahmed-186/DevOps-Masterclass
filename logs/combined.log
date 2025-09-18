@@ -1,0 +1,49 @@
+{"level":"info","message":"Hello from DevOps MasterClass","service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:14:39:00 +0000] \"GET / HTTP/1.1\" 200 30 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"DevOps_MasterClass"}
+{"level":"info","message":"Hello from DevOps MasterClass","service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:14:48:43 +0000] \"GET / HTTP/1.1\" 200 30 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:14:50:31 +0000] \"GET /api HTTP/1.1\" 200 35 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:14:53:07 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:14:53:29 +0000] \"GET /auth/sign-in HTTP/1.1\" 404 151 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:14:53:45 +0000] \"GET /api/auth/sign-in HTTP/1.1\" 404 155 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:14:53:50 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 31 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:15:33:51 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 200 31 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:15:35:01 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 93 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
+{"level":"info","message":"User registered successfully: contact@mazenahmed.tech","service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:15:36:39 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 121 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
+{"level":"info","message":"Hello from DevOps MasterClass","service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:15:38:00 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","service":"DevOps_MasterClass"}
+{"level":"error","message":{},"service":"DevOps_MasterClass"}
+{"level":"error","message":{},"service":"DevOps_MasterClass"}
+{"level":"error","message":{},"service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:15:52:26 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 500 491 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
+{"level":"error","message":{"cause":{"code":"42703","file":"parse_target.c","line":"1065","name":"NeonDbError","position":"65","routine":"checkInsertTargets","severity":"ERROR"},"params":["Mazen","contact@mazenahmed.tech","admin"],"query":"insert into \"users\" (\"id\", \"name\", \"email\", \"password\", \"role\", \"createdAt\", \"updatedAt\") values (default, $1, $2, default, $3, default, default) returning \"id\", \"name\", \"email\", \"role\", \"createdAt\""},"service":"DevOps_MasterClass"}
+{"level":"error","message":{},"service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:15:55:26 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 500 491 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
+{"level":"error","message":{"cause":{"code":"42703","file":"parse_relation.c","hint":"Perhaps you meant to reference the column \"users.created_at\".","line":"3723","name":"NeonDbError","position":"51","routine":"errorMissingColumn","severity":"ERROR"},"params":["contact@mazenahmed.tech",1],"query":"select \"id\", \"name\", \"email\", \"password\", \"role\", \"createdAt\", \"updatedAt\" from \"users\" where \"users\".\"email\" = $1 limit $2"},"service":"DevOps_MasterClass"}
+{"level":"error","message":{},"service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:15:56:19 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 500 491 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
+{"level":"error","message":{"cause":{"code":"42703","file":"parse_relation.c","hint":"Perhaps you meant to reference the column \"users.created_at\".","line":"3723","name":"NeonDbError","position":"51","routine":"errorMissingColumn","severity":"ERROR"},"params":["contact@mazenahmed.tech",1],"query":"select \"id\", \"name\", \"email\", \"password\", \"role\", \"createdAt\", \"updatedAt\" from \"users\" where \"users\".\"email\" = $1 limit $2"},"service":"DevOps_MasterClass"}
+{"level":"error","message":{},"service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:15:57:25 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 500 491 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
+{"level":"error","message":{"cause":{"code":"42703","file":"parse_relation.c","hint":"Perhaps you meant to reference the column \"users.created_at\".","line":"3723","name":"NeonDbError","position":"51","routine":"errorMissingColumn","severity":"ERROR"},"params":["contact@mazenahmed.tech",1],"query":"select \"id\", \"name\", \"email\", \"password\", \"role\", \"createdAt\", \"updatedAt\" from \"users\" where \"users\".\"email\" = $1 limit $2"},"service":"DevOps_MasterClass"}
+{"level":"error","message":{},"service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:15:59:36 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 500 491 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
+{"level":"error","message":{"cause":{"code":"42703","file":"parse_relation.c","hint":"Perhaps you meant to reference the column \"users.created_at\".","line":"3723","name":"NeonDbError","position":"51","routine":"errorMissingColumn","severity":"ERROR"},"params":["contact@mazenahmed.tech",1],"query":"select \"id\", \"name\", \"email\", \"password\", \"role\", \"createdAt\", \"updatedAt\" from \"users\" where \"users\".\"email\" = $1 limit $2"},"service":"DevOps_MasterClass"}
+{"level":"error","message":{"cause":{"code":"42703","file":"parse_relation.c","hint":"Perhaps you meant to reference the column \"users.created_at\".","line":"3723","name":"NeonDbError","position":"51","routine":"errorMissingColumn","severity":"ERROR"},"params":["contact@mazenahmed.tech",1],"query":"select \"id\", \"name\", \"email\", \"password\", \"role\", \"createdAt\", \"updatedAt\" from \"users\" where \"users\".\"email\" = $1 limit $2"},"service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:16:01:21 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 500 1069 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
+{"level":"error","message":{"cause":{"code":"42703","file":"parse_relation.c","hint":"Perhaps you meant to reference the column \"users.created_at\".","line":"3723","name":"NeonDbError","position":"51","routine":"errorMissingColumn","severity":"ERROR"},"params":["contact@mazenahmed.tech",1],"query":"select \"id\", \"name\", \"email\", \"password\", \"role\", \"createdAt\", \"updatedAt\" from \"users\" where \"users\".\"email\" = $1 limit $2"},"service":"DevOps_MasterClass"}
+{"level":"error","message":{"cause":{"code":"42703","file":"parse_relation.c","hint":"Perhaps you meant to reference the column \"users.created_at\".","line":"3723","name":"NeonDbError","position":"51","routine":"errorMissingColumn","severity":"ERROR"},"params":["contact@mazenahmed.tech",1],"query":"select \"id\", \"name\", \"email\", \"password\", \"role\", \"createdAt\", \"updatedAt\" from \"users\" where \"users\".\"email\" = $1 limit $2"},"service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:16:06:46 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 500 1069 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
+{"level":"error","message":{"cause":{"code":"42703","file":"parse_relation.c","hint":"Perhaps you meant to reference the column \"users.created_at\".","line":"3723","name":"NeonDbError","position":"51","routine":"errorMissingColumn","severity":"ERROR"},"params":["contact@mazenahmed.tech",1],"query":"select \"id\", \"name\", \"email\", \"password\", \"role\", \"createdAt\", \"updatedAt\" from \"users\" where \"users\".\"email\" = $1 limit $2"},"service":"DevOps_MasterClass"}
+{"level":"error","message":{"cause":{"code":"42703","file":"parse_relation.c","hint":"Perhaps you meant to reference the column \"users.created_at\".","line":"3723","name":"NeonDbError","position":"51","routine":"errorMissingColumn","severity":"ERROR"},"params":["contact@mazenahmed.tech",1],"query":"select \"id\", \"name\", \"email\", \"password\", \"role\", \"createdAt\", \"updatedAt\" from \"users\" where \"users\".\"email\" = $1 limit $2"},"service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:16:07:24 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 500 1069 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
+{"level":"info","message":"User contact@mazenahmed.tech created successfully.","service":"DevOps_MasterClass"}
+{"level":"info","message":"User registered successfully: contact@mazenahmed.tech","service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:16:08:51 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 122 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
+{"level":"error","message":{},"service":"DevOps_MasterClass"}
+{"level":"error","message":{},"service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:16:10:38 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 500 491 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
+{"level":"info","message":"User info@mazenahmed.tech created successfully.","service":"DevOps_MasterClass"}
+{"level":"info","message":"User registered successfully: info@mazenahmed.tech","service":"DevOps_MasterClass"}
+{"level":"info","message":"::1 - - [18/Sep/2025:16:11:54 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 118 \"-\" \"HTTPie\"","service":"DevOps_MasterClass"}
