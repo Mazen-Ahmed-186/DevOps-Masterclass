@@ -2,6 +2,7 @@ import js from '@eslint/js';
 
 export default [
 	js.configs.recommended,
+
 	{
 		languageOptions: {
 			ecmaVersion: 2022,
@@ -32,6 +33,7 @@ export default [
 			'prefer-arrow-callback': 'error',
 		},
 	},
+
 	{
 		files: ['tests/**/*.js'],
 		languageOptions: {
@@ -47,6 +49,7 @@ export default [
 			},
 		},
 	},
+
 	{
 		ignores: ['node_modules/**', 'coverage/**', 'logs/**', 'drizzle/**'],
 	},
